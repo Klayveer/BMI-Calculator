@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center flex-col justify-center">
+    <div class="bg-white p-8 rounded-lg shadow">
+        <h1 class="mb-4">Calculadora de IMC</h1>
+        <input id="peso" type="number" placeholder="Peso(kg)" class="w-full p-2 border rounded mb-2">
+        <input id="altura" type="number" placeholder="Altura(m)" class="w-full p-2 border rounded mb-2">
+
+        <button onclick="calcularIMC()" class="bg-blue-500 w-full p-2 rounded-lg text-white hover:bg-sky-700">Calcular</button>
+        <div id="resultado" class="mt-4"></div>
+    </div>
+    <script src="imc.js"></script>
+</body>
+</html>
